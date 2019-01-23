@@ -16,6 +16,11 @@ public class Card {
     public Card (String s, int v){
         suit = s;
         value = v;
+        if(v<0 && v>14){
+            System.out.println("The card value is valid");
+        }else{
+            System.out.println("Please enter a valid card value");
+        }
     }
 
     /**
@@ -43,9 +48,7 @@ public class Card {
      * @param value the value to set
      */
     public void setValue(int value) {
-        if(value > 13){
-            System.out.println("Please enter a valid value");
-        }else
+        
         this.value = value;
     }
     
