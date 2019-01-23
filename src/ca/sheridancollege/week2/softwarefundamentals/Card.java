@@ -43,6 +43,9 @@ public class Card {
      * @param value the value to set
      */
     public void setValue(int value) {
+        if(value > 13){
+            System.out.println("Please enter a valid value");
+        }else
         this.value = value;
     }
     
